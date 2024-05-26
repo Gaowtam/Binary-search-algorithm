@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.sun.corba.se.spi.ior.MakeImmutable;
+
 public class BinaraySearchWork {
 	public BinaraySearchWork(){
 		cmp();
@@ -42,7 +44,7 @@ public class BinaraySearchWork {
         int right = arr.length - 1;
         
         while (left <= right) {
-            int mid = left +(right-left)  / 2;
+            int mid = left +(right-left) /*make defference (right-left) */ / 2;
             
             if (arr[mid] == target)
             {
